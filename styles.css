@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2A2D36;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: fixed;
+        top: 0px;
+        right: 0px;
+    left: 0;
+    width: 97%;
+    background-color: #0B0C10;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.block {
+    background-color: ;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+      
+}
+
+.block h2 {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+
+.block form label {
+    display: block;
+    margin: 5px 0;
+}
+
+.block-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-center button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #2A2D36;
+    color: #A0A9B8;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.block-right p {
+    text-align: justify;
+    color:#A0A9B8;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0;
+    width: 99%;
+    background-color: #15161A;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.footer-left p {
+    margin: 0;
+    padding: 3px;
+    width: 60px;
+        border-style: solid;
+    border-width: 1px;
+    border-color: #2A2D32;
+    color: #2A2D32;
+}
+.footer-center{
+    text-align: center;
+    color: #2A2D32;
+}
+
+.footer-right button {
+    width: 200px;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #15161A;
+    color: #A2A8B6;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #2A2D32;
+    border-radius: 5px;
+}
+
+/* The container */
+.container {
+  padding-bottom: 20px;
+  color: #A0A9B8;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #2A2D36;
+  border-style: solid;
+  border-color:white;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #2A2D36;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2A2D36;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 5px;
+	left: 5px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+
+
+#css-is-awesome {
+        cursor: pointer;
+
+        &:hover {
+            transform: rotate(360deg);
+            transition: transform 1s;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer-options {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 25px;
+        border-style: solid;
+        flex-direction: column;
+        background-color: white;
+        
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            background-color: #fff;
+            color: #333;
+            border-radius: 5px;
+            display: block;
+
+            &:hover {
+                color: orange;
+            }
+        }
+    }
+
+
+
+
+
+div#fotografia {
+background-image: url("logo.png");
+background-repeat: no-repeat;
+width: 100px;
+height: 100px;
+}
+
+div#fotografia:hover {
+background-image: url("logo2.png");
+background-repeat: no-repeat;
+width: 100px;
+height: 100px;
+}
+
+
+
+
+.footer-left p:hover{
+    margin: 0;
+    padding: 3px;
+    width: 60px;
+        border-style: solid;
+    border-width: 1px;
+    border-color: orange;
+    color: #A0A9B8;
+}
+
+.block-center button:hover {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: orange;
+    border-width: 1px;
+    color: white;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+    .block {
+        width: 40%;
+        flex-wrap: wrap;
+        
+    }
+    
+    .block:nth-child(3) {
+        width: 90%;
+  
+    }
+    
+    .block-center button {
+       text-align: right;
+
+
+}
+
